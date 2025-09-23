@@ -8,7 +8,7 @@ const Header = () => {
        <div className='container-fluid'>
         <div className="row">
             <div className="col-12">
-                <h1>Prime Film</h1>
+                <img src="./img/boolfilms.gpj.png" alt="" />
 
             </div>
         </div>
