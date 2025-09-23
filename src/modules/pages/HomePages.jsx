@@ -4,19 +4,22 @@ import { useState, useEffect } from "react";
 
 const HomePages = () => {
     //definisco variabile di stato 
-    const [films,setfilms]=usestate ([])
+    const [films,setfilms] = useState ([])
     //creo la funzione per recuperare i film attraverso la chiamata ajax
-    const fetchFilms= () =>{
+    const fetchFilms = () => {
         axios.get('http://localhost:3000/api/film').then ((resp)=>{
             setfilms(resp.data)
-            console.log(resp.data)
+            //console.log(resp.data)
 
         })
         .catch ((err)=> console.log(err))
     }
 
     //uso useEffect per recuperare la lista 
-    useEffect (fetchFilms, [])
+    useEffect(() => {
+        fetchFilms();
+    }, []);
+    
   return (
     <div className='container'>
         <div className="row">
