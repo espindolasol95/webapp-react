@@ -29,20 +29,22 @@ const HomePages = () => {
           </div>
           </div>
           <div className="row gy-3">
-          <div className='col-12 col-md-6 col-lg-4'>
-            <div className="card-film">
-                <img src="./" 
+            {films.map((film) => (
+             <div key = {film.id} className='col-12 col-md-6 col-lg-4'>
+             <div className="card-film">
+                <img src={`http://localhost:3000/${film.image}`} 
                 className='film-cover'
-                alt="film" />
+                alt={film.title}
+                />
                 <div className='overlay'>
-                    <h1>Title</h1>
-                    <p>Genre</p>
-                    <p>Director</p>
+                    <h1>{film.title}</h1>
+                    <p>{film.genre}</p>
+                    <p>{film.director}</p>
                 </div>
-            </div>
-          </div>
+              </div>
+             </div>
+            ))}
         </div>
-      
     </div>
   );
 }
