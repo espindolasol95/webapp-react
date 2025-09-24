@@ -32,7 +32,7 @@ const HomePages = () => {
             {films.map((film) => (
              <div key = {film.id} className='col-12 col-md-6 col-lg-4'>
              <div className="card-film">
-                <img src={`http://localhost:3000/${film.image}`} 
+                <img src={`http://localhost:3000/img/${film.image}`} 
                 className='film-cover'
                 alt={film.title}
                 />
