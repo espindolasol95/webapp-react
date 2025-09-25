@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const FilmCard = ({film}) => {
   return (
-    <div>
-       <div className='col-12 col-md-6 col-lg-4'>
-             <div className="card-film">
-                <img src={`http://localhost:3000/img/${film.image}`} 
+    <div className='col-12 col-md-6 col-lg-4'>
+        <Link to={"/films/:id"}>
+        <div className="card-film">
+            <img src={`http://localhost:3000/img/${film.image}`} 
                 className='film-cover'
                 alt={film.title}
                 />
@@ -14,10 +15,11 @@ const FilmCard = ({film}) => {
                     <p>{film.genre}</p>
                     <p>{film.director}</p>
                 </div>
-              </div>
-             </div>
-            
+        </div>
+        </Link>
+     
     </div>
+      
   )
 }
 

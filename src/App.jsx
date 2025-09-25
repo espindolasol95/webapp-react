@@ -1,8 +1,8 @@
 import React from 'react'
 import DefaultLayout from './layout/DefaultLayout'
-import DetailFilm from './modules/pages/DetailFilm'
+import DetailFilm from './pages/DetailFilm'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import HomePages from './modules/pages/HomePages'
+import HomePages from './pages/HomePages'
 
 const App = () => {
   return(
@@ -10,7 +10,7 @@ const App = () => {
       <Routes>
         <Route element={<DefaultLayout />}>
           <Route path="/" element={<HomePages />} />
-          <Route path="/books/:id" element={<DetailFilm />} />
+          <Route path="/films/:id" element={<DetailFilm />} />
         </Route>
       </Routes>
     </BrowserRouter>
