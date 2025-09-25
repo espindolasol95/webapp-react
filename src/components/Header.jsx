@@ -4,7 +4,7 @@ import style from'../modules/Header.module.css';
 
 const Header = () => {
   return (
-    <header className={style.header}> 
+    <header className={style.Header}> 
        <div className='container-fluid'>
         <div className="row">
             <div className="col-12">

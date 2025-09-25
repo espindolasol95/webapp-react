@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { useState, useEffect } from "react";
-
+import FilmCard from "../components/FilmCard";
 const HomePages = () => {
     //definisco variabile di stato 
     const [films,setfilms] = useState ([])
@@ -29,21 +29,10 @@ const HomePages = () => {
           </div>
           </div>
           <div className="row gy-3">
-            {films.map((film) => (
-             <div key = {film.id} className='col-12 col-md-6 col-lg-4'>
-             <div className="card-film">
-                <img src={`http://localhost:3000/img/${film.image}`} 
-                className='film-cover'
-                alt={film.title}
-                />
-                <div className='overlay'>
-                    <h1>{film.title}</h1>
-                    <p>{film.genre}</p>
-                    <p>{film.director}</p>
-                </div>
-              </div>
-             </div>
-            ))}
+            const {id} = film
+           {films.map((film) => (
+          <FilmCard key={film.id} film={film} />
+        ))}
         </div>
     </div>
   );

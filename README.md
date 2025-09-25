@@ -35,3 +35,53 @@ Curare l’aspetto estetico della vostra applicazione
 Realizzare un modulo css da importare in una componente
 
 Buon Lavoro
+
+esercizio di oggi: Setup Web App React
+
+repo: webapp-react
+
+MILESTONE 4
+
+Continuate a lavorare sulla repo di react e se serve in quella di express per fare in modo che nella pagina di dettaglio ci sia una chiamata ajax che recupera il dettaglio del film comprese le sue recensioni.
+
+Bonus
+Curare l’aspetto estetico della vostra applicazione
+Realizzare le stelle con font-awesome per la media dei voti
+Realizzare i pulsanti per andare avanti ed indietro tra i film
+Realizzare la pagina NotFound
+
+Ciao ragazzi,
+esercizio di oggi:
+
+repo: webapp-react
+
+### Esercizio
+
+Miglioriamo l’esperienza dell’utente inserendo
+
+MILESTONE 1 (BACKEND)
+
+Predisponiamo un’API per salvare nel database una nuova recensione legata ad un film
+Testiamola su postman e verifichiamo che nel DB venga effettivamente inserita una nuova recensione
+
+MILESTONE 2 (FRONTEND)
+
+Creiamo un componente che contenga il form per le recensioni
+Inseriamo questo componente nella pagina di dettaglio del film
+All’invio del form, la nuova recensione viene salvata sul database e visualizzata nella pagina, in fondo alle altre
+
+Ciao ragazzi,
+esercizio di oggi: Book Reviews
+
+repo: webapp-react
+
+Esercizio
+Concludiamo migliorando l’esperienza sulla nostra SPA, inserendo un loader.
+
+creiamo un componente loader
+Questo componente deve poter apparire su qualunque pagina della nostra app.
+Creiamo e sfruttiamo un Context per dare la possibilità ad ogni componente di attivare o disattivare il loader sulla propria pagina
+
+BONUS:
+
+Personalizziamo l’aspetto della nostra app col CSS
