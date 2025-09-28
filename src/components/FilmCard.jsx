@@ -2,9 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 const FilmCard = ({film}) => {
+   console.log("Film card:", film); 
   return (
     <div className='col-12 col-md-6 col-lg-4'>
-        <Link to={"/films/:id"}>
+        <Link to={`/films/${film.id}`}>
         <div className="card-film">
             <img src={`http://localhost:3000/img/${film.image}`} 
                 className='film-cover'

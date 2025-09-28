@@ -7,7 +7,7 @@ const HomePages = () => {
     const [films,setfilms] = useState ([])
     //creo la funzione per recuperare i film attraverso la chiamata ajax
     const fetchFilms = () => {
-        axios.get("http://localhost:3000/api/film").then ((resp)=>{
+        axios.get("http://localhost:3000/api/films").then ((resp)=>{
             setfilms(resp.data)
             //console.log(resp.data)
 
